@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario registro</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #81a288;
+        }
+
+        .caja-registro{
+            width: 600px;
+            padding: 30px;
+            background-color: #fff ;
+            color: #81a288;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+
+        .caja-registro h2 {
+            margin-bottom: 30px;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .formulario{
+            width: 100%;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 3px solid #81a288;
+            font-size: 20px;
+        }
+
+        .caja-registro p{
+            font-size: 20px;
+            margin-bottom: 10
+            px;
+            text-align: center;
+            margin-left: 15px;
+        }
+
+        .caja-registro a{
+            color: #81a288;
+            text-decoration: none;
+        }
+
+        .caja-registro a:hover {
+            color: #81a288;
+            text-decoration: underline;
+        }
+
+        .botones{
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background-color: #81a288;
+            color: white;
+            margin-bottom: 15px;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .botones:hover {
+
+        }
+
+       .check{
+            margin-left: 5px;
+            outline: 3px solid 81a288;
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="caja-registro">
+             <h2>Regístrate</h2>
+             <input class="formulario" type="text" placeholder="Nombre">
+             <input class="formulario" type="text" placeholder="Correo">
+             <input class="formulario" type="password" placeholder="Contraseña">
+             <input type="checkbox" class="check">
+             </dialog><p style="display: inline;">Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+             <input class="botones" type="submit" value="Crear cuenta">
+             <p><a href="#">Ya tengo una cuenta</a></p>
+        </div>
+</body>
+</html>
