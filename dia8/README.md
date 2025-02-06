@@ -64,3 +64,21 @@ Forma de nombrar nuestras clases CSS para mantener codigo limpio y ordenado. Bus
 - elemento: class="carta_header"
 - modifier: class="carta_header--izq"
 
+.[bloque]__[elemento]--[modificador]
+
+## Para que sirve BEM
+
+1. Comunicar un proposito o funcion
+2. Comunicar la estructura del componente
+3. Marca una especificidad baja consistente
+
+El nombre de clase BEM posee 3 partes:
+
+1. **Bloque**: El nombre del componente, el cual por si solo tiene sentido: card, header, container, button, footer, menu
+2. **Elemento**: Dentro de un blowue puede haber uno o mas elementos. Estas partes no tienen sentido por si solos: "menu item", "list item", "checkbox label", "header title".
+3. **Modificadores**: Una variacion o estado diferente para un bloque o elemento. Que cambia la apariencia o comportamiento del mismo. "xmas", disabled highlighted, checked, "size big", "color yellow". No olvidemos que si agregamos un modificador, la etiqueta debe tambien incluir el nombre del elemento o del bloque. 
+ej: <div class="footer footer-red"></div>
+
+
+
+
