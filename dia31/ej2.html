@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        .bloque{
+            width: 200px;
+            height: 200px;
+            background-color: lightsalmon;
+        }
+
+        .msg{
+
+            display: none;
+
+            position:absolute;
+            top: 50%;
+            left: 50%;
+
+            color: white;
+            background-color: rgba(0,0,0,0.7);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloque">
+        <span class="msg">Hola!</span>
+    </div>
+
+    <script>
+        const bloque = document.querySelector(".bloque");
+        const msg = document.querySelector(".msg");
+
+        msg.addEventListener("mouseover", () => {
+            msg.style.display = "block";
+        });
+
+        msg.addEventListener("mouseout", () => {
+            msg.style.display = "none";
+        });
+
+    </script>
+</body>
+</html>

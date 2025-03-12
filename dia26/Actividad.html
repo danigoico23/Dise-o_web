@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad</title>
+</head>
+<body>
+    
+    <p id="nombre">Pato Lucas</p>
+
+    <input type="text" id="inputEj3" placeholder="Ingrese un texto...">
+    <button id="btnEj3">Revisar texto</button>
+    <div id="resultadoEj3">
+
+    </div>
+
+
+    <script>
+        //1. Declaro variables
+        const inputEj3= document.querySelector("#inputEj3");
+        const divEj3= document.querySelector("#resultadoEj3");
+        const btnEj3 = document.querySelector("#btnEj3");
+        const marca = "CEI";
+        const nuevaMarca = `<span class='hl'>${marca}</span>` ;
+
+        //2. Funciones
+
+        btnEj3.addEventListener("click", ()=> {
+            const inputText = inputEj3.value;
+
+            divEj3.innerHTML = inputText.replaceAll(marca, nuevaMarca);  
+        });
+
+        //3. Iniciar nuestro codigo
+
+        inputEj3.value = "Hola gente!";
+
+    </script>
+
+</body>
+</html>

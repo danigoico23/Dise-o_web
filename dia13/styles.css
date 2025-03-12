@@ -1,0 +1,13 @@
+.body{
+    background-color: rgb(230, 255, 230);
+}
+
+.header{
+    background-color: whitesmoke;
+
+}
+
+.header__menu{
+    display: flex;
+    justify-content: end;
+}

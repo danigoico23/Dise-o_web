@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra PapeL Tijera</title>
+</head>
+<body>
+    <script>
+
+        //Funcion principal
+        function jugar(){
+
+            const jugadorIA =  seleccionDeIA();
+
+            console.log (`yo tire ${jugador} - la IA tiro ${jugadoria}`);
+
+            const resultado = queJugadorGana(jugador, jugadorIA);
+
+            console.log(resultado);
+
+            if(resultado=="ganaste"){cantGanaste++; }
+            if(resultado=="perdiste"){cantPerdiste++; }
+            if(resultado=="empataste"){cantEmpataste++; }
+
+            imprimirResultado(resultado);
+        }
+
+        // IA vs IA
+        function AIvAI(){
+            setInterval(() => {
+                
+                console.log("JUEGO AUTOMATICO")
+                cost jugadorAI2= seleccionDeIA();
+                jugar(jugadorAI2); // simular que esta jugando el jugador 1
+
+            }, 1000); // cada 1 segundo 1000 = 1s
+        }
+
+        //que obtuvo el ordenador
+        function seleccionDeIA(){
+const opciones = ['piedra', 'papel', 'tijera'];
+const num = Math.floor(Math.random() * opciones.length);
+
+return opciones [num];
+        }
+
+        // quien gano entre J1 y J2
+        function queJugadorGana(j1, j2){
+
+        }
+
+        //imprimir resultados en pantalla
+        function imprimirResultado(){
+
+        }
+
+    </script>
+</body>
+</html>

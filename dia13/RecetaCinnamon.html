@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinnamon rolls</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="body">
+    <header class="header">
+        <a href="">
+            <img class="logo" src="./img/" alt="logo">
+        </a>
+        <nav class="header__menu">
+            <ul>
+                <li class="header__menu-item">Recipes</li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Newsletter</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <article>
             <h1>Cinnamon Roll Recipe</h1>
@@ -13,7 +26,7 @@
                 <h2>Description</h2>
                 <p>This quick and easy recipe is a great breakfast, snack or dessert for any occasion!</p>
             </section>
-            <section>
+            <section class="ingredients">
                 <h2>Ingredients</h2>
                 <p>
                     <ul>
@@ -27,7 +40,7 @@
                     </ul>
                 </p>
             </section>
-            <section>
+            <section class="instructions">
                 <h2>Instructions</h2>
                 <ol>
                     <li>Mix your dry ingredients together in a big bowl and this includes the flour, sugar, and salt. After that, warm the milk and butter together, and then whisk in the yeast until it has dissolved.</li>
@@ -41,7 +54,7 @@
                 </ol>
             </section>
             <figure>
-                <img src="./cinnamon-roll.jpg" alt="Cinnamon rolls">
+                <img src="./img/cinnamon-roll.jpg" alt="Cinnamon rolls">
                 <figcaption>Cinnamon rolls</figcaption>
             </figure>
         </article>

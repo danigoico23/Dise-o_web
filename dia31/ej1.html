@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio cambiar color </title>
+    <style>
+        .miBloque{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="miBloque"></div>
+    <button id="btnCambiarColor">Cambiar Color</button>
+    <button id="btnRojo">Cambiar a Rojo</button>
+    <button id="btnAzul">Cambiar a Azul</button>
+
+    <script>
+        const bloque = document.getElementById("miBloque");
+        const btnColor = document.getElementById("btnCambiarColor");
+        const btnRojo = document.getElementById("btnRojo");
+        const btnAzul = document.getElementById("btnAzul");
+
+        const listaColores = ["red", "blue", "orange", "lightcoral", "lightgreen", ];
+        const colorId = 0;
+
+        btnColor.addEventListener("click", cambiarColor);
+        btnAzul.addEventListener("click", ()=> cambiarColor("blue"));
+        btnRojo.addEventListener("click", ()=> cambiarColor("red"));
+
+        function cambiarColorSimple(){
+            color++;
+            if(colorId == listaColores.length){
+                colorId = 0;
+            }
+        }
+
+        function cambiarColor(color){
+            bloque.style.backgroundColor = color;
+        }
+
+    </script>
+</body>
+</html>
